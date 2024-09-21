@@ -13,4 +13,6 @@ const productSchema = mongoose.Schema({
     textColor: String,
 });
 
-export const Product = mongoose.model("product", productSchema);
+const Product = mongoose.model("product", productSchema);
+
+module.exports = Product;

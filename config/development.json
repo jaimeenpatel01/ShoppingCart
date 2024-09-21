@@ -1,0 +1,3 @@
+{
+    "MONGODB_URI":"mongodb+srv://jaimeen:1234@shoppingcartcluster.8baxg.mongodb.net/?retryWrites=true&w=majority&appName=ShoppingCartCluster"
+}

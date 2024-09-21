@@ -1,8 +1,10 @@
 const mongoose = require("mongoose");
+// const dbgr = require("debug")("development:mongoose");
+const config=require("config")
 
 mongoose
     .connect(
-        "mongodb+srv://jaimeen:1234@shoppingcartcluster.8baxg.mongodb.net/?retryWrites=true&w=majority&appName=ShoppingCartCluster"
+        `${config.get("MONGODB_URI")}`,
     )
     .then(() => {
         console.log("Connected to MongoDB");
